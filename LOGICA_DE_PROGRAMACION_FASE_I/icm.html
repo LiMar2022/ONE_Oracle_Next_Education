@@ -1,0 +1,74 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULO IMC</h1>
+
+<script>
+
+
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+
+		document.write(frase)
+		saltarLinea()
+	}
+
+	function calcularImc(peso,altura){
+		imc = peso/(altura*altura);
+		return imc
+	}
+
+	var imcChristian = calcularImc(71,1.72);
+	var imcFelipe = calcularImc(75,1.73);
+
+	imprimir("El promedio del IMC calculado es: " + ((imcChristian+imcFelipe)/2));
+
+	nombreInformado = prompt("Informe su nombre:");
+	pesoInformado = prompt("Informe su peso:");
+	alturaInformada = prompt("Informe su altura:");
+
+	imcCalculado = calcularImc(pesoInformado,alturaInformada);
+
+	imprimir(nombreInformado + " su IMC calculado es: " + imcCalculado);
+
+	//Condicionales
+
+	if (imcCalculado < 18.5) {
+		imprimir("El valor de su IMC indica que tiene insuficiencia ponderal")
+	}; 
+
+	if (imcCalculado >= 18.5 && imcCalculado <= 24.9  ) {
+		imprimir("El valor de su IMC indica que está en un intervalo normal")
+	}; 
+
+	if (imcCalculado == 25) {
+		imprimir("El valor de su IMC indica que tiene sobrepeso")
+	}; 
+
+	if (imcCalculado > 25 && imcCalculado <= 29.9) {
+		imprimir("El valor de su IMC indica que está en preobesidad")
+	};
+
+    //function calcularImc(peso,altura){
+		//imc = peso/(altura*altura);
+		//return(imc);
+	//}
+
+	//var pesoChristian = 71
+	//var alturaChristian = 1.72
+	//var imcChristian = pesoChristian/(alturaChristian*alturaChristian);
+	//imcChristian = calcularImc(pesoChristian,alturaChristian)
+
+	//imprimir("El IMC de Christian es: " + imcChristian);
+
+	//var pesoFelipe = 75
+	//var alturaFelipe = 1.73
+	//imcFelipe = calcularImc(pesoFelipe,alturaFelipe)
+	//imprimir("El IMC de Felipe es: " + imcFelipe)
+
+</script>
