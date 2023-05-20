@@ -18,16 +18,17 @@
     }
 
     var x = 0;
+    var dirección = 1;
 
     function actualizarPantalla(){
         limpiarPantalla();
         disenharCircuferencias(x,20,10);
-        x++;
+        x += dirección;
+        if (x > 600 || x < 0){
+            dirección *= -1;
+        }
     }
 
-   setInterval(actualizarPantalla,100);
+   setInterval(actualizarPantalla,5);
         
-        
-    
-
 </script> 
