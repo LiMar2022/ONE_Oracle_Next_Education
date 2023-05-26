@@ -1,0 +1,104 @@
+header{
+  background-color: #BBBBBB;
+  padding: 20px 0px;
+}
+
+.caja{
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a{
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+nav a:hover{
+  color: #c78c19;
+}
+
+
+.intro{
+  background: #cccccc;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  height: 40px;
+  margin: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+.diferenciales{
+  background-color: white;
+  padding: 20px;
+}
+
+h3{
+  align-items: center;
+}
+
+.diferenciales ul{
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  padding: 10;
+}
+
+.items{
+  font-style: italic;
+}
+
+.imgDiferenciales{
+  width: 50%;
+  padding: 5%;
+}
+
+
+em strong {
+  color: #444444;
+}
+
+#mision{
+  font-size: 20px;
+}
+
+#banner{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  background: url(../img/bg.jpg);
+  padding: 40px;
+}
+
+footer p{
+  color: white;
+  font-size: 13px;
+  margin: 20px;
+}
